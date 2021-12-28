@@ -26,4 +26,4 @@
     </ul>
     <h1>Git Clone</h1>
     <p>To use this repository in your local system-</p>
-    <p>git clone https://github.com/BhagavanMarpadaga/Hospital-api</p>
+    <p>git clone https://github.com/BhagavanMarpadaga/Hospital-api.git</p>
