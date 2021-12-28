@@ -11,7 +11,7 @@ app.use(express.urlencoded({extended:true}));
 
 
 app.get('/',function(req,res){
-    res.send("<p>good</p>");
+    res.send("<p>good please enter correct url by following readme.md</p>");
 })
 app.use('/',require('./routes'));
 
