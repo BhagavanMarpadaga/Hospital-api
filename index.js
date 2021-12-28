@@ -18,7 +18,7 @@ app.use('/',require('./routes'));
 
 
 //fires server using express
-app.listen(port,function(err){
+app.listen(process.env.PORT || 5000,function(err){
 
     if(err)
     {
