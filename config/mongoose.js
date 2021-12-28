@@ -1,10 +1,10 @@
 const mongoose=require('mongoose');
-
-mongoose.connect('mongodb://localhost/hospital_api_dev');
+const dotenv=require('dotenv').config();
+mongoose.connect(process.env.MONGO_URI);
 
 const db=mongoose.connection;
 
-db.on('error',function(){
+db.on('error',function(error){
     console.log("Error while connecting to db",error);
 })
 db.once('open',function(){

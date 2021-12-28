@@ -11,7 +11,7 @@ const Doctor=require('../models/Doctors');
 //jwy payload reads the data from payload
 var opts={
     jwtFromRequest : ExtractJwt.fromAuthHeaderAsBearerToken(),
-    secretOrKey :'secret'
+    secretOrKey :process.env.JWT_SECRET
 
 }
 

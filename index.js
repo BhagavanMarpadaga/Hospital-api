@@ -1,9 +1,10 @@
 const express=require('express');
 const port=8000;
 const app=express();
-
+const dotenv=require('dotenv').config();
 const db=require('./config/mongoose');
 const passport=require('passport');
+
 //Authentication using jwt
 const passport_jwt_strategy=require('./config/passport_jwt_strategy');
 
