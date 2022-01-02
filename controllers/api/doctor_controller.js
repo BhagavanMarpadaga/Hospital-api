@@ -30,7 +30,9 @@ module.exports.createDoctor = function (req, res) {
                     }
                     else {
                         return res.status(200).json({
-                            message: "Your successfully signed up into the app!"
+                            message: "Your successfully signed up into the app! here is your id",
+                            id:doctor.id
+
                         })
 
                     }
